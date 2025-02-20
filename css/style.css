@@ -477,6 +477,11 @@ body {
   --state-layer-bg: var(--on-surface);
 }
 
+.card:hover {
+  scale: 1.02; 
+  transition: .1s;
+}
+
 .card-banner {
   border-radius: var(--radius-medium);
 }
