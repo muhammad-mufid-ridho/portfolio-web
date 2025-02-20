@@ -391,21 +391,21 @@
                 </div>
 
                 <div class="contact-form">
-                  <h3 class="title-large">Let's Work Together.</h3>
+                    <h3 class="title-large">Let's Work Together.</h3>
 
-                  <form action="" method="post" class="input-wrapper">
-                    <input type="text" name="name" placeholder="Name*" required class="input-field" />
+                    <form onsubmit="sendWA(event)" class="input-wrapper">
+                      <input type="text" name="name" placeholder="Name*" required class="input-field" id="submitName"/>
 
-                    <input type="email" name="email" placeholder="Email*" required class="input-field" />
+                      <input type="email" name="email" placeholder="Email*" required class="input-field" id="submitEmail"/>
 
-                    <input type="text" name="subject" placeholder="Subject*" class="input-field" />
+                      <input type="text" name="subject" placeholder="Subject*" class="input-field" id="submitSubject"/>
 
-                    <textarea name="messege" placeholder="Messege*" required class="textarea"></textarea>
+                      <textarea name="message" placeholder="Message*" required class="textarea" id="submitMessage"></textarea>
 
-                    <button class="btn" type="submit">
-                      <span class="label-large">Send Messege</span>
+                      <button class="btn" type="submit">
+                        <span class="label-large">Send Messege</span>
 
-                      <div class="state-layer"></div>
+                        <div class="state-layer"></div>
                     </button>
                   </form>
                 </div>

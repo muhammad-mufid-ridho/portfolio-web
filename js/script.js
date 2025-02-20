@@ -40,3 +40,24 @@ $tabBtns.forEach(item => {
       lastActiveTabBtn = this;
 
 })});
+
+function sendWA(event) {
+   event.preventDefault(); // Mencegah reload halaman
+
+   let waNumber = "6281278389617"; // Ganti dengan nomor WA yang benar
+   let name = document.getElementById("submitName").value;
+   let email = document.getElementById("submitEmail").value;
+   let subject = document.getElementById("submitSubject").value;
+   let message = document.getElementById("submitMessage").value;
+
+   let text = `Halo, saya ingin menghubungi Anda:\n\n` +
+              `*Nama:* ${name}\n` +
+              `*Email:* ${email}\n` +
+              `*Subjek:* ${subject}\n` +
+              `*Pesan:* ${message}`;
+
+   let encodedText = encodeURIComponent(text);
+   let WAUrl = `https://wa.me/${waNumber}?text=${encodedText}`;
+
+   window.open(WAUrl, "_blank"); // Membuka WhatsApp di tab baru
+}
