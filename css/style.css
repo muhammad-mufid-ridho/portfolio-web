@@ -7,6 +7,7 @@
 \*-----------------------------------*/
 
 :root {
+  --motion-easing-linear: cubic-bezier(0, 0, 1, 1);
   /* THEME COLORS */
 
   /* Light Theme */
@@ -36,6 +37,7 @@
   --on-primary-dark: hsl(259, 58%, 28%);
   --outline-dark: hsl(264, 5%, 58%);
   --outline-variant-dark: hsl(264, 7%, 29%);
+  --state-layer-bg: hsl(256, 34%, 48%);
 
   /* TYPOGRAPHY */
   /* font families */
@@ -358,7 +360,7 @@ body {
   display: none;
 }
 
-.section-title{
+.section-title {
   margin-block-end: 16px;
 }
 
@@ -470,6 +472,27 @@ body {
  * CARD
  */
 
+.filter {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  margin-block-end: 12px;
+}
+
+.filter button {
+  background-color: var(--surface-container-low);
+  padding: 12px;
+  border-radius: var(--radius-medium);
+}
+
+.filter button:hover {
+  font-weight: 900;
+  background-color: var(--primary-light);
+  scale: 1.02;
+  transition: 0.1s;
+}
+
 .card {
   background-color: var(--surface-container-low);
   border-radius: var(--radius-medium);
@@ -477,10 +500,13 @@ body {
   --state-layer-bg: var(--on-surface);
 }
 
-.card:hover {
-  scale: 1.02; 
-  transition: .1s;
+.card:hover{
+  scale: 1.02;
+  transition: 0.1s;
+  background-color: var(--surface-container);
 }
+
+
 
 .card-banner {
   border-radius: var(--radius-medium);
