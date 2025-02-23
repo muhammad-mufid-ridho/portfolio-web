@@ -498,6 +498,7 @@ body {
   background-color: var(--primary-light);
   scale: 1.02;
   transition: 0.1s;
+  color: var(--on-primary-light);
 }
 
 
