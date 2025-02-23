@@ -493,6 +493,14 @@ body {
   transition: 0.1s;
 }
 
+.filter-btn.colored  {
+  font-weight: 900;
+  background-color: var(--primary-light);
+  scale: 1.02;
+  transition: 0.1s;
+}
+
+
 .card {
   background-color: var(--surface-container-low);
   border-radius: var(--radius-medium);

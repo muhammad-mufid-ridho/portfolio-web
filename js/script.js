@@ -81,11 +81,11 @@ function filterProjects(category, element) {
 
    // Menghapus kelas "active" dari semua tombol filter
    buttons.forEach(btn => {
-      btn.classList.remove("active");
+      btn.classList.remove("colored");
    });
 
    // Tambahkan kelas "active" pada tombol yang diklik
-   element.classList.add("active");
+   element.classList.add("colored");
 }
 
 // Memanggil fungsi saat halaman dimuat untuk menampilkan semua project
