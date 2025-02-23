@@ -112,13 +112,12 @@
             <section class="section tab-content active" data-tab-content="project">
               <div class="container">
                 <div class="filter">
-                  <button class="project">All</button>
-                  <button class="project">Web and IoT</button>
-                  <button class="project">Electrical</button>
-                  <button class="project">Design</button>
+                  <button class="project filter-btn" onclick="filterProjects('all',this)">All</button>
+                  <button class="project filter-btn" onclick="filterProjects('iot',this)">Web and IoT</button>
+                  <button class="project filter-btn" onclick="filterProjects('electrical',this)">Electrical</button>
                   </div>
                 <div class="project-list">
-                  <div class="card">
+                  <div class="card iot">
                     <figure class="card-banner img-holder" style="--width:334, --height:180;">
                       <img src="./assets/images/Cover Project_1.png" alt="image" class="img-cover" width="334" height="180" />
 
@@ -129,7 +128,7 @@
                     </figure>
                   </div>
 
-                  <div class="card">
+                  <div class="card iot">
                     <figure class="card-banner img-holder" style="--width:334, --height:180;">
                       <img src="./assets/images/Cover Project_2.png" alt="image" class="img-cover" width="334" height="180" />
   
@@ -140,13 +139,24 @@
                     </figure>
                   </div>
 
-                  <div class="card">
+                  <div class="card iot">
                     <figure class="card-banner img-holder" style="--width:334, --height:180;">
                       <img src="./assets/images/Cover Project_3.png" alt="image" class="img-cover" width="334" height="180" />
   
                       <div class="card-content">
                         <span class="label-large card-subtitle">Fullstack Web</span>
                         <h3 class="title-large card-title"><a href="https://github.com/muhammad-mufid-ridho/IoT_Project_2_Full-Stack-Web-Control-and-Monitor">LED Control Web Based</a></h3>
+                      </div>
+                    </figure>
+                  </div>
+
+                  <div class="card electrical">
+                    <figure class="card-banner img-holder" style="--width:334, --height:180;">
+                      <img src="./assets/images/Cover Project_Autocad_1.png" alt="image" class="img-cover" width="334" height="180" />
+  
+                      <div class="card-content">
+                        <span class="label-large card-subtitle">Design</span>
+                        <h3 class="title-large card-title"><a href="https://drive.google.com/file/d/170IDAF_GxEN6_a05dnTj2iZlmKGe6qBS/view?usp=sharing">Double open-end wrench</a></h3>
                       </div>
                     </figure>
                   </div>
